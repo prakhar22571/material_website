@@ -61,7 +61,7 @@ p{
     left: 50%;
     transform: translate(-50%,-50%);
     background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
-    border-radius: 50px;
+    border-radius: 10em;
 }
 
 .header-content a{
@@ -168,6 +168,26 @@ a:hover i{
 @media (max-width: 500px){
     
     html{
+        font-size: 40%;
+    }
+
+    .navbar .logo{
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+        letter-spacing: 0;
+    }
+
+    .header-content{
+        border-radius: 0;
+        padding: 1rem;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 768px){
+    
+    html{
         font-size: 50%;
     }
 
@@ -179,28 +199,9 @@ a:hover i{
     }
 
     .header{
-        align-items: center;
-    }
-
-@media (min-width: 501px) and (max-width: 768px){
-    
-    html{
-        font-size: 50%;
-    }
-
-    p{
-        font-size: 1.8rem;
-    }
-
-    .navbar .logo{
-        display: block;
-        width: 100%;
-        /* text-align: center; */
-    }
-
-    .header{
         justify-content: center;
     }
+}
   
 @media(orientation:landscape) and (max-height: 500px){
     
