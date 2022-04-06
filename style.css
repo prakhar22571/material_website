@@ -60,7 +60,6 @@ p{
     left: 50%;
     transform: translate(-50%,-50%);
     background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
-    border-radius: 10em;
 }
 
 .header-content a{
@@ -171,14 +170,12 @@ a:hover i{
     }
 
     .navbar .logo{
-        display: block;
-        width: 100%;
+        width: auto;
         margin-bottom: 2rem;
         letter-spacing: 0;
     }
 
     .header-content{
-        border-radius: 0;
         padding: 1rem;
     }
 
@@ -187,19 +184,20 @@ a:hover i{
 @media (min-width: 501px) and (max-width: 768px){
     
     html{
-        font-size: 50%;
+        font-size: 40%;
     }
 
     .navbar .logo{
         display: block;
         width: 100%;
-        margin-bottom: 50px;
-        letter-spacing: 0.2rem;
+        margin-bottom: 2rem;
+        letter-spacing: 0;
     }
 
-    .header{
-        justify-content: center;
+    .header-content{
+        padding: 1rem;
     }
+
 }
   
 @media(orientation:landscape) and (max-height: 500px){
