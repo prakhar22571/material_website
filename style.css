@@ -13,7 +13,6 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
-    /* background: url("https://images.pexels.com/photos/34627/pexels-photo.jpg") center no-repeat; */
     background: url("https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center no-repeat;
     background-size: cover;
 }
@@ -21,7 +20,7 @@ body{
 /* <----------------------------------- HEADER STYLING ----------------------------------------> */
 
 .header{
-    height: 100vh;
+    height: 95vh;
 }
 
 .navbar .logo{
