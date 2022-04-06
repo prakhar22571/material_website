@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Cedarville+Cursive&family=Grape+Nuts&family=Inspiration&family=Montserrat:wght@300;400;500;700&family=Rubik+Glitch&family=Rubik+Microbe&family=Rubik+Wet+Paint&family=Sansita+Swashed:wght@500&family=Send+Flowers&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    background: url("https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center no-repeat;
+    background-size: cover;
+}
+
+.sem1heading{
+    text-align: center;
+    /* font-family: 'Sansita Swashed', cursive; */
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 10rem;
+    font-weight: 500;
+    color: goldenrod;
+    padding: 3rem;
+    text-decoration: overline 1rem blue;
+}
+
+.subjects{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.subjects .materials{
+    color: orange;
+}
+
+.subjects .materials a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+@media (max-width: 500px){
+    
+    html{
+        font-size: 50%;
+    }
+    
+    .sem1heading{
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    .sem1heading{
+        width: 50vw;
+        text-align: center;
+    }
+
+}

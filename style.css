@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Cedarville+Cursive&family=Montserrat:wght@300;400;500;700&family=Sansita+Swashed:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    /* background: url("https://images.pexels.com/photos/34627/pexels-photo.jpg") center no-repeat; */
+    background: url("https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center no-repeat;
+    background-size: cover;
+}
+
+/* <----------------------------------- HEADER STYLING ----------------------------------------> */
+
+.header{
+    height: 100vh;
+}
+
+.navbar .logo{
+    font-family: 'Sansita Swashed', cursive;
+    text-align: center;
+    color: black;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15rem;
+    letter-spacing: 1rem;
+}
+
+.navbar .logo span{
+    color: yellow;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ 
+p{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.10em;
+} 
+
+.header-content h1{
+    font-weight: 700;
+    letter-spacing: 1rem;
+}
+
+.header-content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+    border-radius: 50px;
+}
+
+.header-content a{
+    margin: 1rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+/* <---------------------------------------UTILITY CLASSES--------------------------------------------> */
+
+.container{
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+
+.text-orange{
+    color: orangered;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333333;
+}
+
+.text-gray{
+    color: #555555;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em;
+}
+
+.btn-primary:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.btn-secondary{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: gold;
+    background: black;
+}
+
+.btn-secondary:hover{
+    background-color: #fcf3f2;
+    color: red;
+    border: 2px solid black;
+}
+
+/* <-----------------------FOOTER STYLING------------------------------> */
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 0.2rem;
+    font-weight: 300;
+}
+
+.footer p{
+    color: white;
+    font-weight: 700;
+}
+
+.social-media a i{
+    margin: 2rem;
+    transition: all 0.3s linear;
+}
+
+a:hover i{
+    transform: scale(1.5);
+}
+
+.fa-linkedin,.fa-github, .fa-instagram{
+    color: white;
+}
+
+/* <----------------------------------------media queries------------------------------------> */
+
+@media (max-width: 500px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .logo{
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+        letter-spacing: 0.2rem;
+    }
+
+    .header{
+        align-items: center;
+    }
+
+@media (min-width: 501px) and (max-width: 768px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    p{
+        font-size: 1.8rem;
+    }
+
+    .navbar .logo{
+        display: block;
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    .header{
+        justify-content: center;
+    }
+  
+@media(orientation:landscape) and (max-height: 500px){
+    
+    .header{
+        height: 90vmax;
+    }
+}
